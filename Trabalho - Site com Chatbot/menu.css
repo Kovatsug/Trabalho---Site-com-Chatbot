@@ -1,0 +1,204 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cima {
+    background: 
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 48px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.subtitulo {
+    width: 100%;
+    height: 20px;
+    background-color: #f7da3a;
+    border-style: solid;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    height: calc(100vh - 100px); 
+    padding: 20px;
+    background-color: #282828;
+}
+
+.barra {
+    background-color: #333;
+    height: 100%;
+    width: 300px; 
+    border-style: solid;
+    border-color: #f7da3a;
+    text-align: center;
+    padding: 20px;
+}
+
+.barra h1,
+.barra h2 {
+    color: white;
+}
+
+.joge {
+    background-color: #f7da3a;
+    width: 300px;
+    height: 200px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.joge img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.game-description {
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px; /* Coloca o texto na parte inferior da div */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o texto horizontalmente */
+}
+
+.hr-preto {
+    border: 0;
+    border-top: 2px solid #333;
+    margin: 20px 0;
+}
+
+/* Estilo do chatbot */
+.chatbot-container {
+  position: fixed;
+  right: 14px;
+  bottom: 20px;
+  width: 300px;
+  max-height: 500px;
+  background: #333;
+  border: 1px solid #f7da3a;
+  border-radius: 10px;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.chatbot-container header {
+  background-color: #282828;
+  color: #f7da3a;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid #f7da3a;
+}
+
+.chatbot-container .content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #282828;
+}
+
+.chatbot-container ul.mensagens {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatbot-container .mensagem {
+  border-radius: 10px;
+  padding: 12px;
+  width: fit-content;
+  max-width: 60%;
+}
+
+.chatbot-container .bot {
+  background-color: #f7da3a;
+  color: #333;
+}
+
+.chatbot-container .usuario {
+  background-color: #282828;
+  color: #f7da3a;
+  align-self: flex-end;
+}
+
+form {
+  background: #282828;
+  height: 64px;
+  display: flex;
+  border-top: 1px solid #f7da3a;
+}
+
+select, button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+select {
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 10px 0 0 10px;
+  padding-left: 20px;
+  color: #f7da3a;
+}
+
+button {
+  cursor: pointer;
+  background-color: #f7da3a;
+  color: #333;
+  width: 200px;
+  border-radius: 0 10px 10px 0;
+}
+
